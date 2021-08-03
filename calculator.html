@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<script type='text/javascript'>
+	
+		var formula = [];
+		
+		
+		function one(){	
+			formula.push("1")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function two(){	
+			formula.push("2")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function three(){	
+			formula.push("3")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function four(){	
+			formula.push("4")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function five(){	
+			formula.push("5")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function six(){	
+			formula.push("6")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function seven(){	
+			formula.push("7")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function eight(){	
+			formula.push("8")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function nine(){	
+			formula.push("9")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function zero(){	
+			formula.push("0")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function plus(){	
+			formula.push("+")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function minus(){	
+			formula.push("-")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function multiply(){	
+			formula.push("*")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function divide(){	
+			formula.push("/")
+			
+			document.getElementById("computation").innerHTML = formula.join("");
+			
+			}
+			
+		function point(){	
+			formula.push(".")
+			
+			document.getElementById("computation").innerHTML = formula.join("");		
+			}
+			
+		function bracket1(){	
+			formula.push("(")
+			
+			document.getElementById("computation").innerHTML = formula.join("");		
+			}
+			
+		function bracket2(){	
+			formula.push(")")
+			
+			document.getElementById("computation").innerHTML = formula.join("");		
+			}
+			
+		function cancel(){	
+			formula.pop()
+			
+			document.getElementById("computation").innerHTML = formula.join("");		
+			}
+
+		function calculate(){
+			document.getElementById("results").innerHTML = eval(formula.join(""));
+		
+			}
+			
+		function emptyarray(){
+			formula = [];
+			document.getElementById("computation").innerHTML = formula.join("");
+			document.getElementById("results").innerHTML = "";
+			}
+			
+			
+			
+			
+	</script>
+	
+		<div id='computation'></div>
+		<div id='results'></div>
+		
+		<span>	<button type="button" onclick="seven()">7</button>
+				<button type="button" onclick="eight()">8</button>
+				<button type="button" onclick="nine()">9</button>
+				<button type="button" onclick="plus()">+</button>
+		</span> <br>
+				
+		<span>	<button type="button" onclick="four()">4</button>
+				<button type="button" onclick="five()">5</button>
+				<button type="button" onclick="six()">6</button>
+				<button type="button" onclick="minus()">-</button>
+		</span> <br>
+				
+		<span>	<button type="button" onclick="one()">1</button>
+				<button type="button" onclick="two()">2</button>
+				<button type="button" onclick="three()">3</button>
+				<button type="button" onclick="multiply()">*</button>
+		</span> <br>
+				
+		<span>	<button type="button" onclick="zero()">0</button>
+				<button type="button" onclick="point()">.</button>
+				<button type="button" onclick="divide()">/</button>
+				<button type="button" onclick="calculate()">=</button>
+		</span> <br>
+		
+		<span>	<button type="button" onclick="cancel()">DEL</button>
+				<button type="button" onclick="bracket1()">(</button>
+				<button type="button" onclick="bracket2()">)</button>		
+		</span> <br>
+		
+		<button type="button" onclick="emptyarray()">CLEAR</button>	
+		
+		
+		
+		
+		
+				
+</body>
+</html>
